@@ -1,0 +1,146 @@
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1235px!important;
+    }
+}
+
+/* ipad add mobile */
+@media (max-width:1023px ) {
+    .hide-on-tablet{
+        display: none;
+        opacity: 0;
+    }
+
+    .carousel-item > a > img {
+        height: auto;
+    }
+
+    .social{
+        top:30%;
+    }
+}
+
+/* mobile */
+@media (max-width:576px) {
+    .video-special .btn-next{
+        top: 30%;
+    }
+    .video-special .btn-prev{
+        top: 10%;
+    }
+}
+
+/* css header-bottom RESPON */
+.navbar-toggler:focus{
+    box-shadow: none!important;
+}
+.modal-menu-mobile{
+    height: 100%;
+    position: fixed;
+    top: 0;
+    transition: right, .3s;
+    width: 100%;
+    z-index: 999;
+    display: block;
+    right: 100%;
+}
+.modal-menu-mobile.active{
+    right: 0%;
+}
+
+.menu-mobile-content{
+    background-color: #fff;
+    position: relative;
+    height: 100%;
+    z-index: 1;
+}
+
+/* close */
+.nemu-mobile-close{
+    background-color: var(--bs-blue-blu);
+    padding: 8px;
+    text-align: right;
+}
+.btn-close{
+    font-size: 20px;
+    padding: 0;
+    line-height: 1;
+    color: while;
+    background: none;
+    outline: none;
+    border: 0;
+    color: white;
+    margin-right: 10px;
+}
+
+
+/* list-menu */
+.wp-list-menu-mobile{
+    background-color: #fff;
+    overflow: hidden;
+    overflow-y: auto;
+    position: relative;
+}
+
+.list-menu-mobile{
+    list-style: none;
+    padding: 5px 15px;
+    margin: 0;
+}
+
+.list-menu-mobile > li > a{
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid #e2e2e2;
+    color: #383838;
+    padding: 10px 0;
+    position: relative;
+}
+
+.list-menu-mobile > li > a i{
+    font-size: 20px;
+    font-weight: bold;
+    top: 50%;
+    display: block;
+    position: absolute;
+    right: 10px;
+    width: 14px;
+    height: 24px;
+    line-height: 24px;
+    transform: translateY(-50%);
+    text-align: center; 
+    transition: .25s linear;
+}
+.list-menu-mobile > li > a > i.open{
+    transform: rotate(90deg); 
+    top: 20%;
+    position: absolute;
+    text-align: center; 
+}
+
+
+/* sub-menu */
+.sub-menu{
+    /* display: none; */
+    height: 0px;
+    overflow-y: auto;
+    transition: .25s height linear;
+}
+.sub-menu::-webkit-scrollbar{
+    display: none;
+}
+/* const activeStr = "is-active"; */
+.sub-menu.is-active{
+
+}
+.sub-menu > li > a{
+    text-decoration: none;
+    display: block;
+    position: relative;
+    padding: 8px 0;
+    color: #000000;
+    padding-left: 30px;
+}
+.sub-menu > li > a:hover{
+    background-color: #d0d0d0;
+}
